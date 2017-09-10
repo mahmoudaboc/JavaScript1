@@ -98,7 +98,7 @@ console.log("Amazing Joes Garage, we service  " + amount);
  
 //12
 
-function newObj {};
+let newObj {};
 
 //13
 
