@@ -1,37 +1,38 @@
 //1 
-function arg () {
-    let a = 1;
-    let b = 2;
-    let c = a + b;
-    console.log(c);
-    
+function sum (a, b, c) {
+    return a + b + c;
 }
-arg();
+
 
 //2
-function colorCar() {
-    let a = red;
-    let b = blue;
-    let c = gray;
-    
-    alert(b);
+
+function colorCar(color) {
+  console.log("a " + color + " car")
 }
 
-colorCar();
+colorCar("red");
 
 //3
 
-let card = {name: 'mahmoud', age: 28}
-console.log(card);
+let card = {name: 'mahmoud', age: 28};
+function newcard (x) {
+   console.log(x)
+}
+newcard(card);
+
 
 //4
 
 function vehicleType (color, code) {
-    if (color == "blue" && code === 2) {
+    if (color === "blue" && code === 2) {
         console.log("a blue used car")
     }
+    else if (color === "red" && code === 3) {
+        console.log("a red new car")
+    }
 }
-vehicleType("blue", 2);
+vehicleType("blue", 2); // a blue used car
+vehicleType("red", 3); // a red new car
 
 //5
 
@@ -40,24 +41,24 @@ console.log(3==3);
 //6
 
 function vehicle(color, code, age) {
-    if (color === "blue" && code === 1 && age === 4) {
+    if (color === "blue" && code <= 5 && age <= 5) {
         console.log("a blue used car");
     }
-    else if (color === "red" && code === 3 && age === 1) {
+    else if (color === "red" && code >= 6 && age >= 6) {
         console.log("a red new car");
+    } else {
+        console.log("used as new car");
     }
-    else {
-        console.log("used as new");
-    }
-        
 }
 
-vehicle("blue", 1, 4);
+vehicle("blue", 1, 5);   //a blue used car
+vehicle("red", 6, 10);  //a red new car
+vehicle("green", 3, 0); //used as new car
 
 //7-8
 
 let vehicles = ['car', 'caravan', 'caravan'];
-console.log(vehicles[3]);
+console.log(vehicles[2]);
 
 //9
 function vehicle(color, code, Age) {
