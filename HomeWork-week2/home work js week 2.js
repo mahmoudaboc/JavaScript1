@@ -36,7 +36,7 @@ vehicleType(1, "red"); //A blue Motobike
 
 //5
 
-console.log(3==3);
+console.log(3 == 3);
 
 //6
 
