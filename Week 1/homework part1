@@ -1,0 +1,26 @@
+/*1*/
+$ touch hello.js
+$ echo "console.log('Hello');" > print hello.js
+$ node hello.js
+hello
+/*2*/
+$ pwd
+/c/Users/MM
+$ mkdir homeWork
+$ cd homeWork
+$ touch blank
+/*3*/
+$ touch greetings.txt
+$ for i in {1..5}; do echo "hello"; done
+/*4*/
+$ for i in {1..5}; do cp greetings.txt $1.txt; done
+/*5*/
+$ echo "cat" > pets.txt
+$ echo "dog" > pets.txt
+$ echo "hamster" > pets.txt
+/*6*/
+$ echo "cat" > commands.txt
+$ echo "ls" > commands.txt
+$ echo "pwd" > commands.txt
+/*7*/
+$ grep -vf pets.txt commands.txt > lovelyCommands.txt
