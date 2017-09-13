@@ -96,8 +96,10 @@ let newObj {};
 
 //13
 
-function objects () {
-    let obj1 = {
+function sum (obj1, obj2) {
+    
+
+var obj1 = {
         a: 1, 
         b: 'this is the letter b', 
         c: { foo: 'what is a foo anyway', 
@@ -105,22 +107,46 @@ function objects () {
         }
     }
     
-    let obj2 = {
+var obj2 = {
         a: '1', 
         b: 'this is the letter b', 
         c: { foo: 'what is a foo anyway', 
              bar: [1,2,3,4]
         }
     }
-  if (obj1.length == obj2.length) {
-      console.log("Obj1 equal to Obj2")
-  }
-    else if (obj1.length === obj2.length) {
-        console.log("Obj1 is strict equality to Obj2 ")
-    }
+    console.log(obj1.a == obj2.a);
+    console.log(obj1.b == obj2.b);
+    console.log(obj1.c[0] == obj2.c[0]);
+    console.log(obj1.c[1] == obj2.c[1]); 
 }
 
-objects();
+sum();
+
+function sum2 (obj1, obj2) {
+    
+
+var obj1 = {
+        a: 1, 
+        b: 'this is the letter b', 
+        c: { foo: 'what is a foo anyway', 
+             bar: [1,2,3,4]
+        }
+    }
+    
+var obj2 = {
+        a: '1', 
+        b: 'this is the letter b', 
+        c: { foo: 'what is a foo anyway', 
+             bar: [1,2,3,4]
+        }
+    }
+    console.log(obj1.a === obj2.a);
+    console.log(obj1.b === obj2.b);
+    console.log(obj1.c[0] === obj2.c[0]);
+    console.log(obj1.c[1] === obj2.c[1]); 
+}
+
+sum2();
 
 //14
 
