@@ -167,13 +167,21 @@ var x = [1,2,3];
 var y = [1,2,3];
 var z = y;
 
-console.log(x == y);
+if (x[0] == y[0] && x[1] == y[1] && x[2] == y[2]) {
+    console.log("x == y")  //true
+}
+else {
+    console.log(" x != y")
+}
 
-console.log(x === y);
+if (x[0] === y[0] && x[1] === y[1] && x[2] === y[2]) {
+    console.log("x === y")  //true
+}
+else {
+    console.log(" x !== y")
+}
 
-console.log(z == y);
-
-console.log(z == x);
+// x == y and x === y  >>> so >>>  z == y , z == x and z === y , z === x
 
 //16
 
