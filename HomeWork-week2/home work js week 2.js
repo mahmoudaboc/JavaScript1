@@ -86,14 +86,9 @@ for (i = 0; i < 1; i++) {
 
 //11
  
-let vehiclesList  = ['cars', 'motorbikes', 'caravans', 'and bikes .'];
-vehiclesList.push("scooters");
-let i;
-amount = "";
-for (i = 1; i < 3; i++) {
-    amount += vehiclesList;
-}
-console.log("Amazing Joes Garage, we service  " + amount);
+let vehicles = ['car', 'caravan', 'caravan'];
+vehicles.push("scooters");
+console.log(vehicles);   // ["car", "caravan", "caravan", "scooters"]
  
 //12
 
