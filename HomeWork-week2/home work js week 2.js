@@ -183,25 +183,20 @@ else {
 
 // x == y and x === y  >>> so >>>  z == y , z == x and z === y , z === x
 
+
+
 //16
 
 var o1 = { foo: 'bar' };
 var o2 = { foo: 'bar' };
 var o3 = o2;
 
-let x =  o2;
-console.log(typeof x);
+o1.foo = 'two bars';
+o2.foo = 'three bars';
 
-let y = 03;
-console.log(typeof y);
-
-if (x == y) {
-    console.log(ture)
-}
-
-if (x != y) {
-    console.log(false)
-}
+console.log(o1);  //{foo: "two bars"}    
+console.log(o2);  //{foo: "three bars"}
+console.log(o3);  //{foo: "three bars"}
 
 
 
