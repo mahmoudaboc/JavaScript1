@@ -77,13 +77,12 @@ vehicle("green", 3 ,1);
 
 //10
 
-let vehiclesList  = ['cars', 'motorbikes', 'caravans', 'and bikes .'];
-let i;
-amount = "";
-for (i = 1; i < 3; i++) {
-    amount += vehiclesList;
+let services = ["car ", "motobikes ", "caravans ", "and bikes "];
+
+for (i = 0; i < 1; i++) {
+   console.log("Amazing Joe's Garage, we service  "  + services);
 }
-console.log("Amazing Joes Garage, we service  " + amount);
+
 
 //11
  
