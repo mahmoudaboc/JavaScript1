@@ -23,16 +23,16 @@ newcard(card);
 
 //4
 
-function vehicleType (color, code) {
-    if (color === "blue" && code === 2) {
-        console.log("a blue used car")
-    }
-    else if (color === "red" && code === 3) {
-        console.log("a red new car")
+function vehicleType (code, color) {
+   if (code === 1 && color === "red") {
+       console.log("A red Car");
+   }
+    else if (code === 2 && color === "blue") {
+        console.log("A blue Motobike");
     }
 }
-vehicleType("blue", 2); // a blue used car
-vehicleType("red", 3); // a red new car
+vehicleType(2, "blue"); //A red Car
+vehicleType(1, "red"); //A blue Motobike
 
 //5
 
