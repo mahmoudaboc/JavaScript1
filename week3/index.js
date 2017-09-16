@@ -1,7 +1,7 @@
 //1+2
 array = ['The_Ministry_of_Utmost_Happiness', 'Killers_of_the_Flower_Moon', 'Beartown', 'Exit_West', 'Priestdaddy', 'You_Dont_Have_to_Say_You_Love_Me' , 'Lincoln_in_the_Bardo', 'The_Impossible_Fortress', 'Hunger', 'Homo_Deus'];
 
-/*3
+3
 
 let x = document.getElementById('demo');
 
@@ -10,7 +10,7 @@ document.body.appendChild(x);
 let ul = document.createElement('ul');
 
 x.appendChild(ul);
-
+/*
 for(let i = 0; i<array.length; i++) {
     let li = document.createElement('li');
     ul.appendChild(li);
@@ -18,12 +18,13 @@ for(let i = 0; i<array.length; i++) {
 }
 
 */
-let xy = document.getElementById('demo');
-document.body.appendChild(xy);
+
 let maintext = document.createElement('h1');
-xy.appendChild(maintext);
+x.appendChild(maintext);
 maintext.innerHTML = "The 10 best books of 2017 so far, according to Amazon";
 maintext.style.color = "red";
+maintext.style.backgroundColor = "transparent";
+maintext.style.border = "transparent";
 maintext.style.textShadow = "2px 2px black";
 
 
@@ -93,6 +94,8 @@ function books(){
     for(j in newbooks){
         let item = document.createElement('li');
         mainlist.appendChild(item);
+        item.setAttribute("id", j);
+        
 
         let h1 = document.createElement('h1');
         let bookname = document.createTextNode(newbooks[j].bookname);
@@ -114,3 +117,32 @@ function books(){
 books();
 
 
+let bookCovers = {
+    book1:'./images/pic1.jpg', 
+    book2:'./images/pic2.jpg',
+    book3: './images/pic3.jpg',
+    book4: './images/pic4.jpg',
+    book5: './images/pic5.jpg',
+    book6: './images/pic6.jpg',
+    book7: './images/pic7.jpg',
+    book8: './images/pic8.jpg',
+    book9: './images/pic9.jpg',
+    book10: './images/pic10.jpg',
+};
+
+let imgKeys = Object.keys(bookCovers)
+
+function myfunction () {
+    for (j of imgKeys) {
+        let image = document.createElement('img');
+        
+        document.getElementById(j).appendChild(image);
+        image.setAttribute("src", bookCovers[j]);
+        image.setAttribute("width", "250px");
+        image.setAttribute("height", "300px");
+        image.setAttribute("alt", "books");
+        
+        
+    }
+}
+myfunction();
