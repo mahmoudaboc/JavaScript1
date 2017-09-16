@@ -10,7 +10,8 @@ li {
     border:2px solid black;
     text-align: center;
 	background-color:#e2f6f5;
-	width:48%;
+	width:45%;
+    height: 30%;
 	box-sizing:border-box;
 	padding:20px;
 	float:left;
@@ -33,4 +34,17 @@ titel {
 h1 {
     text-align: center;
     padding-bottom: 30px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    font-size: 28px;
+    border: 2px dotted brown;
+}
+img {
+    border: 2px dotted brown;
+    transition: box-shadow 1s ;
+}
+
+img:hover {
+    box-shadow: 10px 10px 10px;
 }
