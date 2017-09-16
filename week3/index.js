@@ -114,18 +114,3 @@ function books(){
 books();
 
 
-let bookCover = {
-    Hamlet:'./images/pic1.jpg', 
-    Othelio:'./images/pic2.jpg',
-    the_old_man: './images/pic3.jpg',
-    the_scarlet_letter: './iimages/pic4.jpg',
-    memories: './images/pic5.jpg',
-    stories: './images/pic6.jpg',
-    revenge: './images/pic7.jpg',
-    friends: './images/pic8.jpg',
-    Happy: './images/pic9.jpg',
-    lights: './images/pic10.jpg',
-};
-
-let imgKeys = Object.keys(bookCover);
-
