@@ -127,7 +127,7 @@ let bookCovers = {
     book7: './images/pic7.jpg',
     book8: './images/pic8.jpg',
     book9: './images/pic9.jpg',
-    book10: './images/pic10.jpg',
+    book10: './images/pic10.jpg'
 };
 
 let imgKeys = Object.keys(bookCovers)
