@@ -88,12 +88,12 @@ let newbooks = {
 
 
 function books(){ 
-    let mainlist = document.createElement('ul');
-    document.body.appendChild(mainlist);
+    let mainList = document.createElement('ul');
+    document.body.appendChild(mainList);
 
     for(j in newbooks){
         let item = document.createElement('li');
-        mainlist.appendChild(item);
+        mainList.appendChild(item);
         item.setAttribute("id", j);
         
 
